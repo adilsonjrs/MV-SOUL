@@ -4,38 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | MV SOUL</title>
-
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <title>Login | MV SOUL</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="baar">
-                <div class="icon-baar">
-                    <i class="las la-bars la-lg"></i>
+        <div class="top"></div>
+
+        <div class="login">
+            <div class="box-login">
+
+                <div class="logo">
+                    <img src="src/images/marca_MV.svg" alt="Logo">
                 </div>
-                <h1>soulmv</h1>
-            </div>
-            <div class="info">
+
+                <div class="info">
+                    <p>Usuário e senha</p>
+                </div>
+
+                <div class="info2">
+                    <p>Entre com seu usuário e Senha</p>
+                </div>
+
                 <div class="user">
-                    <h6>HOSPITAL PEQUENO PRÍNCIPE | ADILSON LUIZ DOS SANTOS JUNIOR</h6>
-                    <h6>
-                        <i class="las la-exclamation-circle la-lg"></i>
-                        `${dia}/${mes}/${ano}`
-                    </h6>
+                    <label>Usuário:</label>
+                    <input type="text">
                 </div>
+                <div class="pass">
+                    <label>Senha:</label>
+                    <input type="password">
+                </div>
+                <div class="empress">
+                    <label>Empresa: </label>
+                    <select>
+                        <option select>Selecione...</option>
+                        <option>PEQUENO PRÍNCIPE</option>
+                    </select>
+                </div>
+                <a href="index.html">
+                    Login
+                </a>
             </div>
-        </header>
+
+        </div>
+        <footer>
+            <p>SoulMV  |  Versão: mvautenticador - 2.12.5</p>
+        </footer>
     </div>
-
-
-    <script>
-        var dataAtual = new Date();
-        var dia = dataAtual.getDate();
-        var mes = dataAtual.getMonth();
-        var ano = dataAtual.getFullYear();
-    </script>
 </body>
 </html>

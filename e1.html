@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | MV SOUL</title>
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="baar">
+                <div class="icon-baar">
+                    <i class="las la-bars la-lg"></i>
+                </div>
+                <h1>soulmv</h1>
+            </div>
+            <div class="info">
+                <div class="user">
+                    <h6>HOSPITAL PEQUENO PRÍNCIPE | ADILSON LUIZ DOS SANTOS JUNIOR</h6>
+                    <h6>
+                        <i class="las la-exclamation-circle la-lg"></i>
+                        `${dia}/${mes}/${ano}`
+                    </h6>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <script>
+        var dataAtual = new Date();
+        var dia = dataAtual.getDate();
+        var mes = dataAtual.getMonth();
+        var ano = dataAtual.getFullYear();
+    </script>
+</body>
+</html>
