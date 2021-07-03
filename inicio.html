@@ -14,7 +14,7 @@
         <header>
             <div class="baar">
                 <div class="icon-baar">
-                    <i class="las la-bars la-lg"></i>
+                    <i class="las la-bars"></i>
                 </div>
                 <h1>soulmv</h1>
             </div>
@@ -22,14 +22,17 @@
                 <div class="user">
                     <h6>HOSPITAL PEQUENO PRÍNCIPE | ADILSON LUIZ DOS SANTOS JUNIOR</h6>
                     <h6> 
-                        <i class="las la-exclamation-circle la-lg"></i>
-                        <span>
+                        <i class="las la-exclamation-circle"></i>
+                        <span id="date">
                         <script>
-                            var data = new Date();
-                            document.write(+ data.getDay() + '/' + data.getMonth() + '/' + data.getFullYear())
+                            const data = new Date();
+                            const dia = data.getDate().toString().padStart(2, '0');
+                            const mes = data.getMonth().toString().padStart(2, '0');
+                            const ano = data.getFullYear();
+                            document.write(dia + '/' + mes + '/' + ano)
                         </script>
                         </span>
-                        <span>| MV</span>
+                        <span id="marca">| MV</span>
                         <span>| pt-br</span>
                     </h6>
                 </div>
@@ -53,6 +56,25 @@
                 </div>
             </div>
         </header>
+
+        <main>
+            <div class="menu-lateral">
+                <div id="icon-menu"><i class="las la-search"></i></div>
+                <div id="icon-menu"><i class="las la-wrench"></i></div>
+                <div id="icon-menu"><i class="las la-stethoscope"></i></div>
+                <div id="icon-menu"><i class="las la-briefcase-medical"></i></div>
+                <div id="icon-menu"><i class="las la-microscope"></i></div>
+                <div id="icon-menu"><i class="las la-dollar-sign"></i></div>
+                <div id="icon-menu"><i class="las la-balance-scale"></i></div>
+                <div id="icon-menu"><i class="las la-truck"></i></div>
+                <div id="icon-menu"><i class="las la-server"></i></div>
+            </div>
+
+            <fieldset>
+                <legend>Bem vindo</legend>
+            </fieldset>
+        </main>
+        
     </div>
 
 

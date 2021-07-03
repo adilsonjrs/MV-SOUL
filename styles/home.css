@@ -7,7 +7,7 @@
     font-family: 'Poppins';
 }
 
-body, html {
+body, html, .container {
     height: 100%;
     background: #f5f5f5;
 }
@@ -34,11 +34,12 @@ header {
 
 .icon-baar > i {
     color: #fff;
+    font-size: 25px;
 }
 
 .baar > h1 {
     color: #fff;
-    margin-left: 10px;
+    margin-left: 18px;
 }
 
 .info {
@@ -54,9 +55,24 @@ header {
 }
 
 .user > h6 {
+    display: flex;
+    align-items: center;
     color: #fff;
     font-weight: 400;
     font-size: .6rem;
+}
+
+h6 > i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#date {
+    margin-right: 5px;
+}
+
+#marca {
+    margin-right: 5px;
 }
 
 .icons {
@@ -83,10 +99,65 @@ header {
 
 .icons a > i {
     color: #fff;
+    font-size: 20px;
 }
 
 .icons a:hover {
     background: #3f83c2;
 }
 
+main {
+    height: calc(100% - 50px);
+    display: flex;
+}
+
+.menu-lateral {
+    width: 50px;
+}
+
+#icon-menu {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon-menu > i {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #3670a7;
+}
+
+#icon-menu > i:hover {
+    background: #3670a7a2;
+    color: #fff;
+}
+
+fieldset {
+    width: 100%;
+    border-top: 1px solid #b3b3b3;
+    border-left: 1px solid #b3b3b3;
+    margin-top: 30px;
+}
+
+fieldset > legend {
+    width: 200px;
+    height: 25px;
+    display: flex;
+    align-items: flex-end;
+    background: rgb(252, 252, 252);
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: -50px;
+    margin-left: -5px;
+    padding-left: 5px;
+    border-left: 1px solid #b3b3b3;
+    border-top: 1px solid #b3b3b3;
+    border-right: 1px solid #b3b3b3;
+}
 
