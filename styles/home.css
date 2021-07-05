@@ -93,8 +93,8 @@ h6 > i {
     align-items: center;
     justify-content: center;
     height: 100%;
-    text-decoration: none;
     padding: 0 15px;
+    text-decoration: none;
 }
 
 .icons a > i {
@@ -129,7 +129,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 22px;
     color: #3670a7;
 }
 
@@ -138,19 +138,35 @@ main {
     color: #fff;
 }
 
-fieldset {
+#icon-menu > a {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    text-decoration: none;
+    color: #3670a7;
+}
+
+#icon-menu > a:hover {
+    background: #3670a7a2;
+    color: #fff;
+}
+
+.fieldset-sup {
     width: 100%;
     border-top: 1px solid #b3b3b3;
     border-left: 1px solid #b3b3b3;
     margin-top: 30px;
 }
 
-fieldset > legend {
+.fieldset-sup > .legend-sup {
     width: 200px;
     height: 25px;
     display: flex;
     align-items: flex-end;
-    background: rgb(252, 252, 252);
+    background: rgba(252, 252, 252, 0.575);
     font-size: 12px;
     font-weight: 300;
     margin-top: -50px;
@@ -160,4 +176,5 @@ fieldset > legend {
     border-top: 1px solid #b3b3b3;
     border-right: 1px solid #b3b3b3;
 }
+
 

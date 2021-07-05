@@ -1,0 +1,85 @@
+.principal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal > p {
+    margin: 0 auto;
+    color: #3f83c2;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.atendimento {
+    border: 1px solid #b3b3b3;
+}
+
+.atendimento > legend {
+    color: #3f83c2;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#di-1 {
+    display: flex;
+    margin-top: -10px;
+}
+
+#sup {
+    display: flex;
+    width: 80%;
+}
+
+#sup > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#sup > div > label {
+    font-size: 10px;
+}
+
+#numero-at > input {
+    width: 100px;
+    height: 22px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+#data-int > label {
+    margin-left: 10px;
+}
+
+#data-int > input {
+    width: 70px;
+    height: 22px;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+#data-alta > label {
+    margin-left: 10px;
+}
+
+#data-alta > input {
+    width: 70px;
+    height: 22px;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+#nome-paciente > label {
+    margin-left: 10px;
+}
+
+#nome-paciente > input {
+    width: 1000px;
+    height: 22px;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
