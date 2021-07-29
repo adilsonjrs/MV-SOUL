@@ -24,13 +24,16 @@
                     <h6> 
                         <i class="las la-exclamation-circle"></i>
                         <span id="date">
-                        <script>
-                            const data = new Date();
-                            const dia = data.getDate().toString().padStart(2, '0');
-                            const mes = data.getMonth().toString().padStart(2, '0');
-                            const ano = data.getFullYear();
-                            document.write(dia + '/' + mes + '/' + ano)
-                        </script>
+                             <script>
+                                const data = new Date();
+                                const dia = data.getDate().toString().padStart(2, '0');
+                                const mes = (data.getMonth()+1).toString().padStart(2, '0');
+                                const ano = data.getFullYear();
+                                const hora = data.getHours();
+                                const min = data.getMinutes();
+                                const seg = data.getSeconds();
+                                document.write(dia + '/' + mes  + '/' + ano + '  ' + hora+':'+ min+':'+seg);
+                            </script>
                         </span>
                         <span id="marca">| MV</span>
                         <span>| pt-br</span>
